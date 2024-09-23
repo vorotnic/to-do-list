@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3e5f5; /* Light purple background */
+}
+
+h1 {
+    color: #4a148c; /* Dark purple for the heading */
+    text-align: center;
+}
+
+h1 i {
+    margin-right: 10px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #7b1fa2; /* Medium purple border */
+    border-radius: 4px 0 0 4px;
+}
+
+#addTaskButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #ffd600; /* Bright yellow for the button */
+    color: #4a148c; /* Dark purple text on the button */
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addTaskButton:hover {
+    background-color: #ffea00; /* Lighter yellow on hover */
+}
+
+#addTaskButton i {
+    margin-right: 5px;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#taskList li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(74, 20, 140, 0.2); /* Purple-tinted shadow */
+    border-left: 4px solid #7b1fa2; /* Purple accent on the left side */
+    display: flex;
+    align-items: center;
+}
+
+#taskList li:before {
+    content: '\f058'; /* Checkmark icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 10px;
+    color: #7b1fa2;
+}
