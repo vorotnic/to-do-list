@@ -12,6 +12,13 @@ class ToDoApp {
     // Add a new task
     addTask() {
         const taskName = this.taskInput.value.trim();
+        const taskText = this.taskInput.value.trim();
+        if (taskText !== '') {
+            const li = document.createElement('li');
+            li.innerHTML = `<i class="fas fa-check-circle"></i> ${taskText}`;
+            this.taskList.appendChild(li);
+            this.taskInput.value = '';
+        }
         if (taskName) {
             const newTask = {
                 id: this.tasks.length + 1,
