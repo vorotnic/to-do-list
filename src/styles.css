@@ -61,6 +61,8 @@ h1 i {
     border-left: 4px solid #7b1fa2; /* Purple accent on the left side */
     display: flex;
     align-items: center;
+    justify-content: flex-start; /* Align all items to the left */
+    gap: 10px; /* Add spacing between task text and buttons */
 }
 
 #taskList li:before {
@@ -69,4 +71,24 @@ h1 i {
     font-weight: 900;
     margin-right: 10px;
     color: #7b1fa2;
+}
+
+#taskList li .task-buttons {
+    display: flex;
+    gap: 5px; /* Reduce spacing between buttons */
+}
+
+#taskList li button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #7b1fa2; /* Purple background for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#taskList li button:hover {
+    background-color: #4a148c; /* Darker purple on hover */
 }
